@@ -39,7 +39,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/strapi'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -48,7 +49,20 @@ export default {
     baseURL: '/'
   },
 
+  strapi: {
+    entities: [],
+    url: 'http://localhost:1337'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  googleFonts: {
+    families: {
+      'Cinzel+Decorative': true
+    },
+    display: 'swap',
+    download: true
   }
 }
