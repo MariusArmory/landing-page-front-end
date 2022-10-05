@@ -1,21 +1,27 @@
-<script setup lang="ts">
-import Header from '~/components/TheHeader.vue'
-import Footer from '~/components/TheFooter.vue'
-
-</script>
+<!-- eslint-disable vue/multi-word-component-names -->
+<script setup lang="ts"></script>
 
 <template>
-  <body>
-    <Header />
+  <div>
+    <TheHeader />
     <main>
       <Nuxt />
     </main>
-    <Footer />
-  </body>
+    <TheFooter />
+  </div>
 </template>
 
 <style global>
-    main{
-        margin-inline: 1rem;
-    }
+body,
+html {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+body {
+  background-color: #1b1212;
+}
+main {
+  margin-inline: 30%;
+}
 </style>

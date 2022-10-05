@@ -1,11 +1,6 @@
 <script lang="ts">
-export default {
-  layout: 'default'
-}
 </script>
 
 <template>
-  <div>
-    sneed
-  </div>
+  <div>sneed</div>
 </template>

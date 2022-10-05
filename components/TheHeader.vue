@@ -1,59 +1,33 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <header>
-    <div id="logo">
-      Marius Armory
-    </div>
+    <SiteLogo />
     <nav class="navbar">
-      <li class="navitem">
-        <a href="shop.mariusarmory.com" class="navlink navlink__away">
-          Store
-        </a>
-      </li>
-      <li class="navitem">
-        <NuxtLink to="/gallery" class="navlink">
-          Gallery
-        </NuxtLink>
-      </li>
-      <li class="navitem">
-        <a href="/#about" class="navlink">
-          About
-        </a>
-      </li>
-      <li class="navitem">
-        <a href="/#contact" class="navlink">
-          About
-        </a>
-      </li>
-      <li class="navitem">
-        <a href="shop.mariusarmory.com" class="navlink navlink__away">
-          Store
-        </a>
-      </li>
-      <li class="navitem">
-        <a href="shop.mariusarmory.com" class="navlink navlink__away">
-          <fa icon="fa-facebook" />
-        </a>
-      </li>
-      <li class="navitem">
-        <a href="shop.mariusarmory.com" class="navlink navlink__away">
-          <fa icon="fa-instagram" />
-        </a>
-      </li>
+      <NavList>
+        <NavItem>
+          <NavLink :page="false" :href="'https://shop.mariusarmory.com'">
+            Shop
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink :page="true" :to="'about'"> Gallery </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink :page="false" :href="'/#about'"> About </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink :page="false" :href="'/#contact'"> Contact </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink :page="false" :href="'https://facebook.com'">
+            <fa icon="fa-facebook" />
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink :page="false" :href="'https://instagram.com'">
+            <fa icon="fa-instagram" />
+          </NavLink>
+        </NavItem>
+      </NavList>
     </nav>
   </header>
 </template>
-
-<style scoped>
-    #logo{
-        font-family: "Cinzel Decorative";
-        color: #fff;
-        font-size: 3rem;
-        text-align: center;
-        user-select: none;
-        padding: 0.5rem;
-    }
-</style>
