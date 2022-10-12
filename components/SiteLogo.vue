@@ -4,7 +4,7 @@
 
 <style scoped>
 .logo {
-  font-family: "Cinzel Decorative", cursive;
+  font-family: "Cinzel Decorative";
   color: #fff;
   font-size: 3rem;
   text-align: center;

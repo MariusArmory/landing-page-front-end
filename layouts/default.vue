@@ -15,6 +15,7 @@ html {
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #1b1212;

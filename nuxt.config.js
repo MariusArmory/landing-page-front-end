@@ -1,10 +1,10 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "server",
+  target: "static",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "landing-page-front-end",
+    title: "Marius Armory",
     htmlAttrs: {
       lang: "en",
     },
@@ -14,13 +14,7 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap",
-      },
-    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -36,21 +30,23 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",
-    "@nuxtjs/google-fonts",
+    [
+      "@nuxtjs/google-fonts",
+      {
+        families: {
+          "Cinzel Decorative": true,
+        },
+        display: "swap",
+        prefetch: false,
+        preconnect: true,
+        useStylesheet: false,
+        preload: false,
+        download: false,
+        base64: false,
+      },
+    ],
     "@nuxtjs/fontawesome",
   ],
-
-  googleFonts: {
-    families: {
-      Inter: true,
-      "Cinzel+Decorative": true,
-    },
-    download: true,
-    stylePath: "css/fonts.css",
-  },
-  fontawesome: {
-    icons: ["faFacebook", "faInstagram"],
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
