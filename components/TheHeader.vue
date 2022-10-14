@@ -12,7 +12,7 @@
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink :page="true" :to="'about'"> Gallery </NavLink>
+          <NavLink :page="true" :to="'gallery'"> Gallery </NavLink>
         </NavItem>
         <NavItem>
           <NavLink :page="false" :href="'/#about'"> About </NavLink>
@@ -22,6 +22,7 @@
         </NavItem>
         <NavItem>
           <NavLink :page="false" :href="'https://facebook.com'">
+            <fa icon="faFacebook"/>
           </NavLink>
         </NavItem>
         <NavItem>

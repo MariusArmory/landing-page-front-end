@@ -48,6 +48,14 @@ export default {
     "@nuxtjs/fontawesome",
   ],
 
+  fontawesome: {
+    component: "Fa",
+    suffix: false,
+    icons: {
+      solid: ["faFacebook", "faInstagram"],
+    },
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
