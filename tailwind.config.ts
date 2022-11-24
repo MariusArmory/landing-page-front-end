@@ -8,6 +8,12 @@ export default <Config>{
     "./components/**/*.{html,js}",
   ],
   theme: {
+    extend: {
+      fontFamily: {
+        "cinzel": ["Cinzel Decorative"],
+        "mont": ["Montserrat"],
+      },
+    }
   },
   plugins: [],
 };
