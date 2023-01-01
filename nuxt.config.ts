@@ -1,9 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  plugins: ['~/plugins/fontawesome.js'],
+  css: ['@fortawesome/fontawesome-svg-core/styles.css'],
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts"],
   googleFonts: {
     families: {
       "Cinzel+Decorative": [400],
+      "Montserrat": [200, 400],
     },
     display: "swap",
     download: true,
