@@ -17,6 +17,8 @@
     "nuxt": "3.0.0"
   },
   "dependencies": {
-    "@fortawesome/vue-fontawesome": "^3.0.2"
+    "@fortawesome/vue-fontawesome": "^3.0.2",
+    "axios": "^1.2.2",
+    "photoswipe": "^5.3.4"
   }
 }
