@@ -1,18 +1,12 @@
 <template>
   <nav class="flex align-center justify-center py-2">
-    <NavItem :href="'/'">
-    Home
-    </NavItem>
-    <NavItem :href="'/'">
+    <NavItem :href="'https://marius-armory.myshopify.com'">
     Shop
     </NavItem>
-    <NavItem :href="'/gallery'">
-    Gallery
-    </NavItem>
-    <NavItem :href="'https://www.instagram.com/'">
+    <NavItem :href="'https://www.instagram.com/paulmarias'">
       <font-awesome-icon :icon="['fab', 'instagram']" /> 
     </NavItem>
-    <NavItem :href="'https://www.facebook.com/'">
+    <NavItem :href="'https://www.facebook.com/profile.php?id=100076373375133&mibextid=ZbWKwL'">
       <font-awesome-icon :icon="['fab', 'facebook']" /> 
     </NavItem>
   </nav>
