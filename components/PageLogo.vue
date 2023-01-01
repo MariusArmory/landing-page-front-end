@@ -1,6 +1,6 @@
 <template>
-<div class="text-center pt-4 pb-2">
-  <NuxtLink to="/" class=" text-7xl font-cinzel text-white select-none">
+<div class="text-center">
+  <NuxtLink to="/" class="text-7xl font-cinzel select-none">
     Marius Armory     
   </NuxtLink>
 </div>
