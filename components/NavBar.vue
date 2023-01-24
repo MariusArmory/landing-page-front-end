@@ -1,6 +1,6 @@
 <template>
   <nav class="flex align-center justify-center py-2">
-    <NavItem :href="'https://marius-armory.myshopify.com'">
+    <NavItem :href="'https://staging.shop.mariusarmory.com'">
     Shop
     </NavItem>
     <NavItem :href="'https://www.instagram.com/paulmarias'">
